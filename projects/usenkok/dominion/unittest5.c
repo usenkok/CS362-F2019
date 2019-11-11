@@ -22,7 +22,7 @@ int main()
 	int choice1 = 0;
 	int choice2 = 0;
 	int bonus = 0;
-	int i, j, r, p;
+	int i, r;
 	int seed = 1000;
 
 	enum CARD card = mine;

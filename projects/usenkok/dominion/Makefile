@@ -36,12 +36,12 @@ runtests: testDrawCard
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
 
-unittestresults: testBaron testMinion testTribute testAmbassador testMinion
+unittestresults: testBaron testMinion testTribute testAmbassador testMine
 	./testBaron &> unittestresults.out
 	./testMinion >> unittestresults.out
 	./testTribute >> unittestresults.out
 	./testAmbassador >> unittestresults.out
-	./testMinion >> unittestresults.out
+	./testMine >> unittestresults.out
 	gcov dominion.c -f -b >> unittestresults.out
 	cat dominion.c.gcov >> unittestresults.out
 

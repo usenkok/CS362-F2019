@@ -13,8 +13,8 @@ playdom: dominion.o playdom.c
 testDrawCard: testDrawCard.c dominion.o rngs.o
 	gcc  -o testDrawCard -g  testDrawCard.c dominion.o rngs.o $(CFLAGS)
 
-testBaron: randomcardtest1.c dominion.o rngs.o
-	gcc -o testBaron -g randomcardtest1.c dominion.o rngs.o $(CFLAGS)
+testBaron: randomtestcard1.c dominion.o rngs.o
+	gcc -o testBaron -g randomtestcard1.c dominion.o rngs.o $(CFLAGS)
 
 testMinion: randomtestcard2.c dominion.o rngs.o
 	gcc -o testMinion -g randomtestcard2.c dominion.o rngs.o $(CFLAGS)

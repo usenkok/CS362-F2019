@@ -93,12 +93,12 @@ randomtestresults: testBaron testMinion testTribute
 	gcov dominion.c -f -b >> randomtestresults.out
 	cat dominion.c.gcov >> randomtestresults.out
 
-unittestresults: testBaron testMinion testTribute testAmbassador testMine
-	./testBaron &> unittestresults.out
-	./testMinion >> unittestresults.out
-	./testTribute >> unittestresults.out
-	./testAmbassador >> unittestresults.out
-	./testMine >> unittestresults.out
+unittestresults: testBaronUnit testMinionUnit testTributeUnit testAmbassadorUnit testMineUnit
+	./testBaronUnit &> unittestresults.out
+	./testMinionUnit >> unittestresults.out
+	./testTributeUnit >> unittestresults.out
+	./testAmbassadorUnit >> unittestresults.out
+	./testMineUnit >> unittestresults.out
 	gcov dominion.c -f -b >> unittestresults.out
 	cat dominion.c.gcov >> unittestresults.out
 
